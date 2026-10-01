@@ -1,4 +1,3 @@
-@"
 # Terraform
 .terraform/
 *.tfstate
@@ -36,5 +35,6 @@ __pycache__/
 *.pyc
 
 # Logs
-*.log
-"@ | Set-Content .gitignore
+*.log# Generated Ansible inventory
+ansible/inventory/hosts.ini
+

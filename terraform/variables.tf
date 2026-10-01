@@ -31,3 +31,18 @@ variable "availability_zones" {
     "ap-south-1b"
   ]
 }
+variable "allowed_ssh_cidr" {
+  description = "CIDR allowed to access SSH"
+  type        = string
+}
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "key_name" {
+  description = "AWS EC2 key pair name"
+  type        = string
+}
+
